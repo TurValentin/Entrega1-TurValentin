@@ -10,17 +10,8 @@
     font-family: "nunito" , sans-serif;
 }
 
-body{
-    background-color: rgb(64, 64, 64);
-}
-
-h2{
-    margin-bottom: 20px;
-}
-
-h1{
-    text-transform: uppercase;
-    color: rgb(245, 245, 220);   
+body {
+    background: rgb(64, 64, 64) !important;
 }
 
 ul li{
@@ -54,6 +45,11 @@ ul li{
 .nombre{
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 30px;
+}
+
+.tituloSecundario {
+    font-size: 25px;
 }
 
 .aside{
@@ -67,8 +63,13 @@ ul li{
     
 }
 
+.negrita {
+    font-weight: bold;
+}
+
 .aside h3{
     margin: 10px;
+    font-size: 20px;
 }
 
 .contenedor_img{
@@ -143,10 +144,12 @@ footer ul{
 
 .form__contacto .form_button{
     width: 45%;
-    background: rgb(64, 64, 64);
+    background-color: rgb(64, 64, 64);
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
+    margin-top: 16px;
+    color: rgb(245, 245, 220);
     border: 1.5px solid rgb(64, 64, 64);
     box-shadow: 1px 1px 3px rgb(64, 64, 64);
 }
@@ -155,4 +158,18 @@ footer ul{
 .form__contacto .form_button:hover{
     border: 1.5px solid rgb(245, 245, 220);
     box-shadow: 1px 1px 3px rgb(245, 245, 220); 
+}
+
+#ofertas {
+    margin: auto;
+    background-color: rgb(245, 245, 220);
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+    border-radius: 7px;     
+}
+
+#ofertas h3{
+    font-size: 20px;
+    text-decoration: underline;
 }
