@@ -6,7 +6,7 @@ const salarioInput = document.getElementById('salarioInput')
 const divOfertas = document.getElementById("ofertas")
 
 form.addEventListener("submit", e => {
-    e.preventDefault();
+    e.preventDefault() //evita que se mande el form;
     if(nombre.value === '') {
         alert('Por favor, ingrese su nombre en el formulario.');
         e.preventDefault(); 
@@ -29,7 +29,7 @@ form.addEventListener("submit", e => {
         e.preventDefault() 
     } else {
         const nuevaOferta = document.createElement('div')
-        nuevaOferta.textContent = `Nombre: ${nombre.value} || Salario: ${salario.toFixed(2)}`;
+        nuevaOferta.textContent = `Nombre: ${nombre.value} || Salario ARS: $${salario.toFixed(2)} || Salario USD: $${(salario / 240).toFixed(2)}`;
         divOfertas.appendChild(nuevaOferta)
 
         salarioInput.value = '';
@@ -42,6 +42,6 @@ form.addEventListener("submit", e => {
     const salarioGuardado = salario;
 
     const salarioMostrado = document.getElementById('salarioMostrado');
-    salarioMostrado.textContent = salarioGuardado.toFixed;
+    salarioMostrado.textContent = salarioGuardado.toFixed(2);
 })
 

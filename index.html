@@ -21,7 +21,7 @@
             <ul>
               <li><span class="negrita">Edad:</span> 21 Años</li>
               <li><span class="negrita">Nacionalidad:</span> Argentina</li>
-              <li><span class="negrita">bFecha de Nacimiento:</span> 26/03/02</li>
+              <li><span class="negrita">Fecha de Nacimiento:</span> 26/03/02</li>
             </ul>
           </div>
         </div>
@@ -115,31 +115,25 @@
     <footer class="footer">
       <div class="contenedor_footer">
         <form action="#" method="get" enctype="multipart/form-data" data-aos="fade-down" id="form" class="form__contacto">
-          <h3>Contactame</h3>
-
-          <div>
-            <label for="name"></label>
-            <input type="text" name="name" id="name" placeholder="Ingrese su Nombre" class="form_input"/>
+          <div class="mb-3">
+            <div id="oferta" class="form-text">Contactame y enviame tu oferta de trabajo a través de este medio.</div>
+            <label for="name" class="form-label"></label>
+            <input type="text" name="name" id="name" placeholder="Ingrese su Nombre"  class="form-control" aria-describedby="oferta">
           </div>
-
-          <div>
-            <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="Ingrese su E-mail" class="form_input"/>
+          <div class="mb-3">
+            <label for="email" class="form-label"></label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su E-mail" class="form-control">
           </div>
-
-          <div>
-            <label for="salarioInput"></label>
-            <input type="number" name="salarioInput" id="salarioInput" placeholder="Ingrese el monto del salario mínimo" class="form_input">
+          <div class="mb-3">
+            <label for="salarioInput" class="form-label"></label>
+            <input type="number" name="salarioInput" id="salarioInput" placeholder="Ingrese el monto del salario mínimo" class="form-control">
           </div>
-
-          <div>
-            <input type="submit" value="Enviar" class="form_button" />
-          </div>
-
+          
+          <button type="submit" value="Enviar" class="form_button" class="btn btn-dark">Enviar</button>
         </form>
 
         <div id="ofertas">
-          <h3>Ofertas de trabajo:</h3>
+          <h3>Lista de ofertas</h3>
         </div>
 
         <ul>
