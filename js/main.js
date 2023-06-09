@@ -29,7 +29,7 @@ form.addEventListener("submit", e => {
         e.preventDefault() 
     } else {
         const nuevaOferta = document.createElement('div')
-        nuevaOferta.textContent = `Nombre: ${nombre.value} || Salario ARS: $${salario.toFixed(2)} || Salario USD: $${(salario / 240).toFixed(2)}`;
+        nuevaOferta.textContent = `Nombre: ${nombre.value}  || Salario ARS: $${salario.toFixed(2)} || Salario USD: $${(salario / 240).toFixed(2)}`;
         divOfertas.appendChild(nuevaOferta)
 
         salarioInput.value = '';
